@@ -7,4 +7,4 @@ cd $ZIMBRA_PATH
 bash $BACKUP_CWD/hardlinks.sh scan . .hardlinks
 tar -f $BACKUP_FOLDER/$BACKUP_FILENAME --preserve-permissions -zc .
 service zimbra start
-bash post_backup.sh
+bash $BACKUP_CWD/post_backup.sh
