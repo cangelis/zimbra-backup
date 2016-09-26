@@ -1,6 +1,7 @@
 #!/bin/bash
 
-bash $BACKUP_CWD/config
+BACKUP_CWD="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+source $BACKUP_CWD/config
 service zimbra stop
 cd $ZIMBRA_PATH
 rm -rf $ZIMBRA_PATH/*
