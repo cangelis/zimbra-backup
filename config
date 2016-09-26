@@ -1,4 +1,6 @@
 #!/bin/bash
 
+BACKUP_DATE=`date +"%d-%m-%Y %H:%M:%S"`
+export BACKUP_FILENAME="backup-${BACKUP_DATE}.tgz"
 export ZIMBRA_PATH=/opt/zimbra
 export BACKUP_FOLDER=/tmp
