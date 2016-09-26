@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export ZIMBRA_PATH=/opt/zimbra
+export BACKUP_CWD="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+export BACKUP_FOLDER=/tmp
